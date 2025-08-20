@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Doctors</h2>
+  <form>
+    <input #name placeholder="Name">
+    <input #spec placeholder="Specialization">
+    <button type="button" (click)="add(name.value, spec.value); name.value=''; spec.value=''">Add</button>
+  </form>
+
+  <button (click)="toggleDoc()">{{showDoctorsList? 'Hide Doctors':'Show Doctors List'}}</button>
+  <ul *ngIf="showDoctorsList">
+    <li *ngFor="let d of doctors">
+      {{d.id}} - {{d.name}} ({{d.specialization}})
+      <button (click)="delete(d.id)">Delete</button>
+      <input #uname placeholder="New Name">
+      <input #uspec placeholder="New Spec">
+      <button (click)="update(d.id, uname.value, uspec.value)">Update</button>
+    </li>
+  </ul>
+</div>

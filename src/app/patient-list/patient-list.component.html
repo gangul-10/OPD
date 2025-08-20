@@ -1,0 +1,20 @@
+<h2>Patients</h2>
+
+<!-- Form -->
+<input type="text" placeholder="Name" [(ngModel)]="patient.name">
+<input type="number" placeholder="Age" [(ngModel)]="patient.age">
+<input type="text" placeholder="Description" [(ngModel)]="patient.description">
+<button (click)="patient.id ? updatePatient() : addPatient()">
+  {{ patient.id ? 'Update' : 'Add' }} Patient
+</button>
+
+
+<button (click)="toToggle()">{{showPatientsList? 'Hide Patients': 'Show Patients'}}</button>
+<ul *ngIf="showPatientsList">
+  <li *ngFor="let p of patients">
+
+    {{p.id}} - {{p.name}}-(Age: {{ p.age }}) - {{p.description}}
+    <button (click)="editPatient(p)">Edit</button>
+    <button (click)="deletePatient(p.id)">Delete</button>
+  </li>
+</ul>

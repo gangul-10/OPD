@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+   text-align:left;
+  color: #1976d2;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+   margin-right: 5px;
+  padding: 5px;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125ca1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+  background: #f0f0f0;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

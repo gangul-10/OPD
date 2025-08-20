@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Appointments</h2>
+  <form>
+    <input #docId type="number" placeholder="Doctor ID">
+    <input #patId type="number" placeholder="Patient ID">
+    <input #date type="date">
+
+    <button type="button" (click)="add(+docId.value, +patId.value, date.value ); docId.value=''; patId.value=''; date.value=''">Add</button>
+  </form>
+
+  <button (click)="toggleAppointmentsList()">{{showAppointmentsList? 'Hide Appointments':'Show Appointments'}}</button>
+  <div *ngIf="showAppointmentsList">
+  <table >
+    <tr>
+      <th>ID</th>
+      <th>Doctor ID</th>
+      <th>Patient ID</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let a of appointments">
+      <td>{{a.id}}</td>
+      <td>{{a.doctor?.id}}</td>
+      <td>{{a.patient?.id}}</td>
+      <td>{{a.date}}</td>
+
+      <td>
+        <button (click)="delete(a.id)">Delete</button>
+        <input #udocId type="number" placeholder="New Doc ID">
+        <input #upatId type="number" placeholder="New Pat ID">
+        <input #udate type="date">
+
+        <button (click)="update(a.id, +udocId.value, +upatId.value, udate.value)">Update</button>
+      </td>
+    </tr>
+  </table>
+  </div>
+  </div>
+
+
+
+

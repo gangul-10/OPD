@@ -1,0 +1,25 @@
+h2 {
+  color: #333;
+}
+form {
+  margin-bottom: 15px;
+}
+input {
+  margin-right: 5px;
+  padding: 5px;
+}
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #0d47a1;
+}
+li {
+  margin: 8px 0;
+  list-style: none;
+}
