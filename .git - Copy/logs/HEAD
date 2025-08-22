@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 b021f6fb4ad75eb02895694d71667bc056a8d811 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755719588 -0700	commit (initial): opd spring boot
+b021f6fb4ad75eb02895694d71667bc056a8d811 0000000000000000000000000000000000000000 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755719614 -0700	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 b021f6fb4ad75eb02895694d71667bc056a8d811 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755719614 -0700	Branch: renamed refs/heads/master to refs/heads/main
+b021f6fb4ad75eb02895694d71667bc056a8d811 0000000000000000000000000000000000000000 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755841981 -0700	Branch: renamed refs/heads/main to refs/heads/main
+b021f6fb4ad75eb02895694d71667bc056a8d811 b021f6fb4ad75eb02895694d71667bc056a8d811 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755841981 -0700	Branch: renamed refs/heads/main to refs/heads/main
+b021f6fb4ad75eb02895694d71667bc056a8d811 14d0475576783033a5a57f59ae61ae57f35d3c84 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755842263 -0700	pull --rebase origin main (start): checkout 14d0475576783033a5a57f59ae61ae57f35d3c84
+14d0475576783033a5a57f59ae61ae57f35d3c84 14d0475576783033a5a57f59ae61ae57f35d3c84 Shriharsha Gangul <shriharshagangul10@gmail.com> 1755842263 -0700	pull --rebase origin main (finish): returning to refs/heads/main
